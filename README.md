@@ -22,3 +22,17 @@ requests: HTTP istekleri göndermek ve almak için kullanılır.
 
 -h, --help: Yardım mesajlarını görmek için kullanılır. 
 ```
+
+### Örnek Kullanım
+> #### Tekil URL Kontrolü:
+
+```python cloudflare_check.pt --domain https://example.com```
+
+![]()
+
+> #### Dosya Tabanlı Kontrol:
+
+```python cloudflare_check.pt --input https://example.com```
+
+![]()
+
