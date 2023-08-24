@@ -28,11 +28,11 @@ requests: HTTP istekleri göndermek ve almak için kullanılır.
 
 ```python cloudflare_check.pt --domain https://example.com```
 
-![]()
+![](https://github.com/ahmetnuysal/cloudflare_check/blob/main/Pics/%C3%A7%C4%B1kt%C4%B11.png)
 
 > #### Dosya Tabanlı Kontrol:
 
 ```python cloudflare_check.pt --input https://example.com```
 
-![]()
+![](https://github.com/ahmetnuysal/cloudflare_check/blob/main/Pics/Cloudflare_Check_%C3%87%C4%B1kt%C4%B1_Toplu.png)
 
