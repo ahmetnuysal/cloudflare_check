@@ -14,5 +14,8 @@ argparse: Komut satırı argümanlarını işlemek için kullanılır.
 requests: HTTP istekleri göndermek ve almak için kullanılır.
 
 ### Komut Satırı Argümanları
---domain veya -d: Tek bir URL'nin Cloudflare durumunu kontrol etmek için kullanılır.
---input veya -i: Bir dosyadan URL listesi alarak Cloudflare durumunu kontrol etmek için kullanılır.
+-d, --domain: Tek bir URL'nin Cloudflare durumunu kontrol etmek için kullanılır.
+
+-i, --input: Bir dosyadan URL listesi alarak Cloudflare durumunu kontrol etmek için kullanılır.
+
+-h, --help: Yardım mesajlarını görmek için kullanılır. 
