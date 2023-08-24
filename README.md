@@ -7,20 +7,12 @@ Tekil URL Kontrolü: Projeyi kullanarak belirli bir URL'nin Cloudflare hizmeti k
 
 Dosya Tabanlı Kontrol: Proje, bir dosyada bulunan URL listesini okuyarak bu URL'lerin Cloudflare kullanıp kullanmadığını denetler. Bu özellik sayesinde büyük URL listelerini otomatik olarak analiz edebilirsiniz.
 
-## Nasıl Kullanılır
-
-Bu adımlar, projenin yerel makinenizde klonlanması ve çalıştırılması için gerekenleri anlatmalıdır.
-
 ### Gereksinimler
 Bu projenin çalışması için aşağıdaki Python kütüphanelerine ihtiyaç vardır:
 
 argparse: Komut satırı argümanlarını işlemek için kullanılır.
 requests: HTTP istekleri göndermek ve almak için kullanılır.
 
-### Kurulum
-
-1. Öncelikle projeyi kendi hesabınıza forklayın.
-2. Daha sonra projeyi yerel makinenize klonlayın:
-
-```bash
-git clone https://github.com/KullaniciAdi/proje-adi.git
+### Komut Satırı Argümanları
+--domain veya -d: Tek bir URL'nin Cloudflare durumunu kontrol etmek için kullanılır.
+--input veya -i: Bir dosyadan URL listesi alarak Cloudflare durumunu kontrol etmek için kullanılır.
