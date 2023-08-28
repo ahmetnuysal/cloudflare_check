@@ -1,36 +1,38 @@
 
-# Cloudflare Check
-Bu proje, verilen web sitelerinin Cloudflare kullanıp kullanmadığını tespit eden bir Python aracını içermektedir. Cloudflare, birçok web sitesinin güvenliğini ve performansını artırmak amacıyla kullandığı bir içerik dağıtım ağı ve güvenlik hizmetidir. Bu araç, belirli URL'leri kontrol ederek, sunucu başlıkları üzerinden Cloudflare hizmetinin kullanılıp kullanılmadığını belirler.
+# Cloudflare Checker
+This project includes a Python tool that detects whether given websites are utilizing Cloudflare. Cloudflare is a content delivery network and security service employed by numerous websites to enhance security and performance. This tool examines specific URLs and determines the usage of Cloudflare services based on server headers.
 
-## Proje Özellikleri
-Tekil URL Kontrolü: Projeyi kullanarak belirli bir URL'nin Cloudflare hizmeti kullanıp kullanmadığını kontrol edebilirsiniz. Eğer URL geçerli bir formatta değilse veya bağlantı sırasında zaman aşımına uğrarsa, durumu hakkında bilgi verilir.
+## Project Features
+Single URL Check: Using the project, you can determine whether a specific URL is using Cloudflare services or not. If the URL is not in a valid format or experiences a timeout during the connection, information about its status will be provided.
 
-Dosya Tabanlı Kontrol: Proje, bir dosyada bulunan URL listesini okuyarak bu URL'lerin Cloudflare kullanıp kullanmadığını denetler. Bu özellik sayesinde büyük URL listelerini otomatik olarak analiz edebilirsiniz.
+File-Based Check: The project examines whether URLs listed in a file are using Cloudflare services. This feature allows you to automatically analyze large lists of URLs.
 
-### Gereksinimler
-Bu projenin çalışması için aşağıdaki Python kütüphanelerine ihtiyaç vardır:
+### Requirements
 
-argparse: Komut satırı argümanlarını işlemek için kullanılır.
+The following Python libraries are necessary for this project to function:
 
-requests: HTTP istekleri göndermek ve almak için kullanılır.
+argparse: Used for handling command-line arguments.
 
-### Komut Satırı Argümanları
+requests: Used for sending and receiving HTTP requests.
+
+### Command Line Arguments
+
 ```
--d, --domain: Tek bir URL'nin Cloudflare durumunu kontrol etmek için kullanılır.
+-d, --domain: Used to check the Cloudflare status of a single URL.
 
--i, --input: Bir dosyadan URL listesi alarak Cloudflare durumunu kontrol etmek için kullanılır.
+-i, --input: Used to check the Cloudflare status of URLs from a file.
 
--h, --help: Yardım mesajlarını görmek için kullanılır. 
+-h, --help: Used to view help messages. 
 ```
 
-### Örnek Kullanım
-> #### Tekil URL Kontrolü:
+### Example Usage
+> #### Single URL Check:
 
 ```python cloudflare_check.pt --domain https://example.com```
 
 ![](https://github.com/ahmetnuysal/cloudflare_check/blob/main/Pics/Cloudflare_Check_%C3%87%C4%B1kt%C4%B1.png)
 
-> #### Dosya Tabanlı Kontrol:
+> #### File-Based Check:
 
 ```python cloudflare_check.pt --input https://example.com```
 
