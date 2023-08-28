@@ -25,7 +25,7 @@ requests: Used for sending and receiving HTTP requests.
 -h, --help: Used to view help messages. 
 ```
 
-### Example Usage
+### Usage Example
 > #### Single URL Check:
 
 ```python cloudflare_check.pt --domain https://example.com```
