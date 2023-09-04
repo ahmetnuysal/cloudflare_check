@@ -42,12 +42,17 @@ requests: Used for sending and receiving HTTP requests.
 
 > #### 1. Creating a Dockerfile:
   The first step is to create a Dockerfile, which will enable you to move our project into a Docker container. The Dockerfile contains the steps for building a container.
+
 > #### 2. Building the Docker Image:
   To create the Docker image, open your command prompt and navigate to the directory where your project is located. Then, run the following command:
+  
   ```docker build -t python-docker .```
+  
   Here, the "-t" flag assigns a tag to the image. "python-docker" is the name you want to give to your image. The dot "." represents the current directory.
+
 > #### 3.Running the Container:
   After successfully building the Docker image, you can start a container using the following command:
+
   ```docker run python-docker python cloudflare_check.py -i file.txt or docker run python-docker python cloudflare_check.py -d website-URL```
 
 
