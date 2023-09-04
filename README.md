@@ -53,7 +53,7 @@ requests: Used for sending and receiving HTTP requests.
 > #### 3.Running the Container:
   After successfully building the Docker image, you can start a container using the following command:
 
-  ```docker run python-docker python cloudflare_check.py -i file.txt or docker run python-docker python cloudflare_check.py -d website-URL```
+  ```docker run python-docker python cloudflare_check.py -i file.txt``` or ```docker run python-docker python cloudflare_check.py -d website-URL```
 
 
 
